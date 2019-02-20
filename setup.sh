@@ -450,6 +450,10 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Use plain text mode for new TextEdit documents
 defaults write com.apple.TextEdit RichText -int 0
 
+# TextEdit always opens new document instead of the open panel
+defaults write -g NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false
+
+
 ###############################################################################
 # Spotlight                                                                   #
 ###############################################################################
